@@ -1,0 +1,46 @@
+<div *ngFor="let roleObject of roleObjects" class="c1" id="{{cardId}}">
+    <div class="card-heading">
+        <div class="card-heading-text">{{roleObject.name}}</div>
+        <div class="edit-icon" ><a class="a-edit-button" id='{{cardId}}-child'><img src="../../../../assets/images/edit.svg"></a></div>
+    </div>
+    <div class="card-sub-heading">
+        <div class="card-sub-heading-left">
+            <div>
+                <img class="card-icons" src="../../../../assets/images/team_svgrepo.com.svg">
+            </div>
+            <div>
+                Department
+            </div>
+        </div>
+        <div class="card-sub-heading-right">
+            {{roleObject.department}}
+        </div>
+    </div>
+    <div class="card-sub-heading">
+        <div class="card-sub-heading-left">
+            <div>
+                <img class="card-icons" src="../../../../assets/images/location-pin-alt-1_svgrepo.com.svg">
+            </div>
+            <div>
+                Location
+            </div>
+        </div>
+        <div class="card-sub-heading-right">
+            {{roleObject.location}}
+        </div>
+    </div>
+    <div class="card-sub-heading">
+        <div class="card-sub-heading-left">
+            Total Employees
+        </div>
+        <div class="card-sub-heading-right card-imgs">
+            
+        </div>
+    </div>
+    <a id="{{cardId}}-child2" class ="a-view-employees">
+    <div class="view-arrow">
+        <p>View all Employees </p>
+        <img class="icon-arrow" src="../../../../assets/images/Vector.svg">
+    </div>
+    </a>
+</div>

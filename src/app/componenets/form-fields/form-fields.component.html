@@ -1,0 +1,9 @@
+<div [class]="class">
+    <label [for]="id">{{label}}<span *ngIf="isRequired" class="red-asterisk">*</span></label>
+    <input [style.width]="width" [style.height]="height" #inputElement [type]="type" [class]="innerClass" [id]="id" [placeholder]="placeholder"
+    [name]="name" (focus)="isDateInput ? inputElement.type='date' : null" [attr.max]="isDateInput ? maxDate : null" [attr.pattern]="pattern ? pattern : null">
+    <div *ngIf="isRequired" class=" visible-prompt">
+    <p class="required-field"><span
+            class="material-symbols-outlined exclaim">emergency_home</span>this field is required
+    </p>
+</div>

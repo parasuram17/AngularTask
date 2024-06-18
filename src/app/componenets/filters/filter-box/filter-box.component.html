@@ -1,0 +1,25 @@
+<div class="filter-box">
+    <div class="filter-box-select">
+        <div class="filter-text">
+            <span> Filter</span>
+            <span class="material-symbols-outlined filtering-icon">filter_list</span>
+        </div>
+        <select id="status" class="filter-tags">
+            <option>Status</option>
+            <option>Active</option>
+            <option>Inactive</option>
+        </select>
+        <select id="location" class="filter-tags" formControlName="locations">
+            <option *ngFor="let location of locations" [value] = location.id>{{location.name}}</option>
+        </select>
+        <select id="department" class="filter-tags department-filter" formControlName="departments">
+            <option *ngFor="let department of departments" [value] = department.id>{{department.name}}</option>
+        </select>
+    </div>
+
+    <div class="filter-box-apply">
+        <button class="btn-reset">Reset</button>
+        <button class="btn-apply">Apply</button>
+
+    </div>
+</div>

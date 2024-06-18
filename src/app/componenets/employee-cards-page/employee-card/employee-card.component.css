@@ -1,0 +1,59 @@
+.c1{
+    padding: 0.4rem 1rem;
+}
+.profile-section-copy-employee-page{
+    margin: 1rem 0;
+}
+.card-person-name{
+    font-size: 0.77rem;
+
+}
+.card-person-role{
+    font-size: 0.65rem;
+}
+
+.card-sub-heading{
+    justify-content: start;
+}
+.c1{
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 0.5rem;
+}
+.card-sub-heading{
+    display: flex;
+    align-items: center;
+    font-size: 0.69rem;
+    padding: 0.18rem 0;
+    font-weight:500;
+    color: rgb(69,85,115);
+}
+.view-arrow{
+    display:flex;
+    align-items:center;
+    justify-content: end;
+    font-size: 0.65rem;
+    font-weight:500;
+    color: rgb(120,120,120);
+}
+.icon-arrow{
+    transform: scale(0.8);
+}
+.card-icons{
+    transform: scale(0.8);
+    padding-right:0.25rem;
+}
+.profile-section-copy {
+    display: flex;
+    align-items: center;
+}
+
+.profile-section-copy p {
+    margin: 0;
+}
+.img-avatar {
+    height:2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+}

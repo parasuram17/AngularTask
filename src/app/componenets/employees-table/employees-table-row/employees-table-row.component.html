@@ -1,0 +1,44 @@
+<tr *ngFor="let employeeObject of employeeObjects" class="table-rows">
+    <td>
+        <input type="checkbox" class="check-box">
+    </td>
+    <td class="th-user">
+        <div class="profile-section-copy">
+            <div>
+                <img class="img-avatar" src="{{employeeObject.profilePicture}}"/>
+            </div>
+            <div>
+                <p class="table-person-name">{{employeeObject.firstName}} {{employeeObject.lastName}}</p>
+                <p class="table-person-email">{{employeeObject.emailId}}</p>
+            </div>
+        </div>
+    </td>
+    <td class="row-content th-location">
+        {{employeeObject.location}}
+    </td>
+    <td class="row-content th-department">
+        {{employeeObject.department}}
+    </td>
+    <td class="row-content th-role">
+        {{employeeObject.jobTitle}}
+    </td>
+    <td class="row-content th-empno">
+        {{employeeObject.employeeId}}
+    </td>
+    <td class="th-status">
+        <button class="btn-active">{{status}}</button>
+    </td>
+    <td class="row-content th-joindt">
+        {{employeeObject.joinDate}}
+    </td>
+    <td class="triple-dot">
+        <a>
+            ...
+            <div class="tooltip">
+                <a id = "{{employeeObject.employeeId}}-child" class = "tt-view"><p class="tooltip-text">View Details</p></a>
+                <a id = "{{employeeObject.employeeId}}-child2" class = "tt-edit"><p class="tooltip-text">Edit</p></a>
+                <a id = "{{employeeObject.employeeId}}-child3" class = "tt-delete"><p class="tooltip-text">Delete</p></a>
+            </div>
+        </a>
+    </td>
+</tr>

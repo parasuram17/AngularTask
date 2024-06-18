@@ -1,0 +1,13 @@
+
+app-left-navbar {
+    grid-area: app-left-navbar;
+}
+
+app-search-bar{
+    grid-area: app-search-bar;
+}
+
+.router-outlet-wrapper{
+    margin-top: 1rem;
+    grid-area: router-outlet;
+}
