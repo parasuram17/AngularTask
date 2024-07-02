@@ -1,0 +1,14 @@
+<div id="toaster-notification" *ngIf="toasterVisible">
+  <div [ngClass]="['toast-' + toasterType]">
+    <div class="success-failure-message">
+      <div class="tick-message">
+        <div><i class="fa-solid fa-circle-check"></i></div>
+        <div>
+          <p [ngClass]="'message-head-' + toasterType">{{ toasterHeading }}</p>
+          <p [ngClass]="'message-desc-' + toasterType">{{ toasterMessage }}</p>
+        </div>
+      </div>
+      <a (click)="hideToaster()"><span class="material-symbols-outlined" [ngClass]="toasterType + '-x'">close</span></a>
+    </div>
+  </div>
+</div>

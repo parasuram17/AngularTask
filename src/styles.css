@@ -1,9 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-body {
+* {
     font-family: Lato;
 }
-
-
 a:hover,
 button:hover,
 select:hover {
@@ -13,18 +10,3 @@ select:hover {
 a {
     text-decoration: none;
 }
-app-root {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 12fr;
-    grid-template-columns: 1fr 6.5fr;
-    grid-template-areas:
-        "app-left-navbar app-search-bar "
-        "app-left-navbar router-outlet";
-}
-app-root.active{
-    grid-template-columns: 0.3fr 7fr;
-
-}
-
-
